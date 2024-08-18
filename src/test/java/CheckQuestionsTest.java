@@ -19,7 +19,7 @@ public class CheckQuestionsTest {
     private final String expectedText;
 
     public CheckQuestionsTest(int index, String expectedText) {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver(); // new FirefoxDriver();
         samokatMainPage = new SamokatMainPage(driver);
         this.index = index;
         this.expectedText = expectedText;

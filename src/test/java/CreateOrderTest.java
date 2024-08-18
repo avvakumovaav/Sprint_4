@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.AboutRentPage;
 import pages.CreateOrderPage;
@@ -31,8 +32,7 @@ public class CreateOrderTest {
 
 
     public CreateOrderTest(String name, String lastName, String address, String metro, String phone, String rentStartDate, String rentTime, String color, boolean result) {
-        driver = new FirefoxDriver();
-        //        driver = new ChromeDriver();
+        driver = new ChromeDriver(); // new FirefoxDriver();
         samokatMainPage = new SamokatMainPage(driver);
 
         this.name = name;
